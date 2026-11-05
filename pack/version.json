@@ -1,0 +1,86 @@
+{
+ "version": "97592d552a67",
+ "pack_date": "2026-11-06",
+ "size": 60899058,
+ "gz": 31322252,
+ "files": [
+  {
+   "path": "vendor/opencv.js",
+   "size": 10378215,
+   "gz": 3414124,
+   "hash": "19b46167b59efbef"
+  },
+  {
+   "path": "vendor/ort.wasm.min.mjs",
+   "size": 48259,
+   "gz": 15735,
+   "hash": "6ef726f355b79112"
+  },
+  {
+   "path": "vendor/ort-wasm-simd-threaded.mjs",
+   "size": 20856,
+   "gz": 8475,
+   "hash": "30dd851d9c006229"
+  },
+  {
+   "path": "vendor/ort-wasm-simd-threaded.wasm",
+   "size": 11210254,
+   "gz": 2919994,
+   "hash": "71aef04959c5c1b6"
+  },
+  {
+   "path": "models/det.onnx",
+   "size": 9929594,
+   "gz": 8030637,
+   "hash": "090f04abcd9d9a74"
+  },
+  {
+   "path": "models/rec_latin.onnx",
+   "size": 7904513,
+   "gz": 7260306,
+   "hash": "b20bd37c168a570f"
+  },
+  {
+   "path": "models/rec_latin_dict.json",
+   "size": 3146,
+   "gz": 1245,
+   "hash": "7f782706e39aee49"
+  },
+  {
+   "path": "pack/names.json",
+   "size": 4624960,
+   "gz": 2033487,
+   "hash": "51d1c27bbf6c3267"
+  },
+  {
+   "path": "pack/prints.json",
+   "size": 13843683,
+   "gz": 5858135,
+   "hash": "6aa85d49cdd0d3b6"
+  },
+  {
+   "path": "pack/art.bin",
+   "size": 785456,
+   "gz": 777821,
+   "hash": "4173332d0a908d67"
+  },
+  {
+   "path": "pack/art.json",
+   "size": 310736,
+   "gz": 143885,
+   "hash": "95c990587576a4f1"
+  },
+  {
+   "path": "pack/sets.json",
+   "size": 7017,
+   "gz": 2773,
+   "hash": "ee434fa9d5e44299"
+  },
+  {
+   "path": "pack/roles.json",
+   "size": 1832369,
+   "gz": 855635,
+   "hash": "ef7efee7bfcd2518"
+  }
+ ]
+}

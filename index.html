@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14161a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Kartenkiste">
+<meta name="description" content="Karten scannen und die eigene Sammlung im Handy führen. Von GonzooTV.">
+<title>Kartenkiste</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img src="icons/icon-192.png" alt=""><div><b>Kartenkiste</b><span>von GonzooTV</span></div></div>
+  <span id="chip" class="chip">Startet …</span>
+</header>
+
+<main>
+  <section id="screen-scan" class="screen">
+    <div id="scan-banner"></div>
+    <div class="cam" id="cam">
+      <video id="video" playsinline muted></video>
+      <canvas id="overlay"></canvas>
+      <div id="guide"></div>
+      <div id="hint" class="hint" hidden></div>
+      <button id="cam-start" class="cam-start">Kamera starten</button>
+    </div>
+    <div class="shutter-row">
+      <button id="search-open" class="ghost">Suchen</button>
+      <button id="shutter" class="shutter" disabled aria-label="Scannen"><span></span></button>
+      <button id="go-coll" class="ghost">Sammlung</button>
+    </div>
+    <div id="scan-deck" class="scan-deck" hidden></div>
+    <p id="scan-note" class="small center"></p>
+  </section>
+
+  <section id="screen-coll" class="screen" hidden>
+    <div id="coll-banner"></div>
+    <div class="coll-head">
+      <h2>Sammlung <span id="coll-count" class="small"></span></h2>
+      <input id="coll-filter" type="search" placeholder="In der Sammlung suchen" autocomplete="off">
+    </div>
+    <div class="buttons"><button id="save">Sicherung speichern</button><button id="load">Sicherung laden</button></div>
+    <div id="coll-value"></div>
+    <div id="coll-store"></div>
+    <div id="coll-empty"></div>
+    <ul id="coll-list" class="clist"></ul>
+  </section>
+
+  <section id="screen-decks" class="screen" hidden></section>
+
+  <section id="screen-help" class="screen" hidden></section>
+</main>
+
+<nav class="tabs">
+  <button data-screen="scan" class="on">Scannen</button>
+  <button data-screen="coll">Sammlung<i class="dot" hidden></i></button>
+  <button data-screen="decks">Decks</button>
+  <button data-screen="help">Hilfe</button>
+</nav>
+
+<div id="sheet" class="sheet" hidden><div class="sheet-body" id="sheet-body"></div></div>
+<div id="intro" class="intro" hidden></div>
+<div id="toast" class="toast" hidden></div>
+<input type="file" id="file" accept=".json,application/json" hidden>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
